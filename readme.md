@@ -31,7 +31,7 @@ The puroise of this project is to master the exploratory data analsis (EDA) in C
 
 #### Visualize the salary with the job title 
 
-![](ref/visualize_job_title.png)
+![](/ref/visualize_job_title.png)
 
 ### Conclusions
 
