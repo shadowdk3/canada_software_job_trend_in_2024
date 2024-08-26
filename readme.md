@@ -1,6 +1,6 @@
 # Canada Software Job Trend in 2024
 
-## [EDA] (https://github.com/shadowdk3/IBM-Data-Analyst-Professional-Certificate/tree/main/11-Data_Analyst_Career_Guide_and_Interview_Preparation)
+## [EDA](https://github.com/shadowdk3/canada_software_job_trend_in_2024/blob/master/notebook/EDA_Canada_Software_Job_Trend_2024.ipynb)
 
 The puroise of this project is to master the exploratory data analsis (EDA) in Canada Software Job Trend in 2024
 
@@ -31,7 +31,7 @@ The puroise of this project is to master the exploratory data analsis (EDA) in C
 
 #### Visualize the salary with the job title 
 
-<!-- ![Job title](http://url/to/img.png) -->
+![Job title](https://github.com/shadowdk3/canada_software_job_trend_in_2024/blob/master/ref/visualize_job_title.png)
 
 ### Conclusions
 
