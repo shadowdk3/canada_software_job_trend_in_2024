@@ -31,7 +31,7 @@ The puroise of this project is to master the exploratory data analsis (EDA) in C
 
 #### Visualize the salary with the job title 
 
-![Job title](https://github.com/shadowdk3/canada_software_job_trend_in_2024/blob/master/ref/visualize_job_title.png)
+![](ref/visualize_job_title.png)
 
 ### Conclusions
 
