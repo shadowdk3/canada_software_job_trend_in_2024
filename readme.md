@@ -33,6 +33,52 @@ The puroise of this project is to master the exploratory data analsis (EDA) in C
 
 ![](/ref/visualize_job_title.png)
 
+#### Visualize top 10 job title 
+
+![](/ref/top_10_job_title.png)
+
+#### Visualize the salary with the job Infomation
+
+![](/ref/top_10_job_info.png)
+
+#### Visualize the salary with position
+
+![](/ref/visualize_position.png)
+
+#### Visualize the salary with employer
+
+![](/ref/top_10_employer.png)
+
+#### Visualize the salary with city
+
+![](/ref/top_10_city.png)
+
+#### Visualize the salary with Province
+
+![](/ref/visualize_province.png)
+
+#### Visualize the salary with Skill
+
+![](/ref/top_10_skill.png)
+
+#### Visualize the salary with Seniority
+
+![](/ref/visualize_seniority.png)
+
+#### Visualize the salary with Work Type
+
+![](/ref/visualize_work_type.png)
+
+#### Visualize the salary with Industry Type
+
+![](/ref/visualize_industry_type.png)
+
+#### Salary Box Plot
+
+![Average Salary](/ref/boxplot_avg_salary.png)
+![Maximum Salary](/ref/boxplot_max_salary.png)
+![Minimum Salary](/ref/boxplot_min_salary.png)
+
 ### Conclusions
 
 - Salary data range: $30,240.56 to $180,000.00, with an average of $78,434.73.
