@@ -1,5 +1,13 @@
 # Canada Software Job Trend in 2024
 
+## Setup Environment
+
+- Install required package
+
+`pip install -r requirements.txt`
+
+
+
 ## [EDA](https://github.com/shadowdk3/canada_software_job_trend_in_2024/blob/master/notebook/EDA_Canada_Software_Job_Trend_2024.ipynb)
 
 The puroise of this project is to master the exploratory data analsis (EDA) in Canada Software Job Trend in 2024
