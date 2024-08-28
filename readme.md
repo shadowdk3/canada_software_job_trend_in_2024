@@ -6,7 +6,14 @@
 
 `pip install -r requirements.txt`
 
+## Project Structure
 
+### [Data Ingestion](https://github.com/shadowdk3/canada_software_job_trend_in_2024/blob/master/src/components/data_ingestion.py)
+
+- Read data from a CSV file using `Pandas`
+- Modify the function to handle different data formats or sourse
+- Preprocessing steps can be added within the function as needed
+- In this example, we split the CSV file into test and train data set
 
 ## [EDA](https://github.com/shadowdk3/canada_software_job_trend_in_2024/blob/master/notebook/EDA_Canada_Software_Job_Trend_2024.ipynb)
 
