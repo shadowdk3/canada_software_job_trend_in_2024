@@ -29,25 +29,8 @@ class DataIngestion:
             df=pd.read_csv('data/data_analyst_canada.csv')
 
             # preprocess
-            # df['Job Info'] = df['Job Info'].str.replace(r'[^a-zA-Z0-9\s]', '', regex=True)
-            # df = df.drop('Job Info', axis=1)
-            # df = df.drop('Employer', axis=1)
-            # df = df.drop('City', axis=1)
-            # df = df.drop('Skill', axis=1)
-            # df = df.drop('Position', axis=1)
-            # df = df.drop('Province', axis=1)
-            # df = df.drop('Seniority', axis=1)
-            # df = df.drop('Work Type', axis=1)
-            # df = df.drop('Industry Type', axis=1)
-            # df = df.drop('Job Title', axis=1)
-                # "Position",
-                # "Employer",
-                # "City",
-                # "Province",
-                # "Skill",
-                # "Seniority",
-                # "Work Type",
-                # "Industry Type",
+            df['Job Info'] = df['Job Info'].str.replace(r'[^a-zA-Z0-9\s]', '', regex=True)
+
             logging.info('Read the dataset as dataframe')
 
             os.makedirs(os.path.dirname(self.ingestion_config.train_data_path), exist_ok=True)

@@ -31,12 +31,12 @@ class DataTransformation:
             numerical_columns = ["Min_Salary", "Max_Salary"]
             categorical_columns = [
                 "Job Title",
-                # "Job Title",
-                # "Position",
-                # "Employer",
-                # "City",
-                # "Province",
-                # "Skill",
+                "Job Info",
+                "Position",
+                "Employer",
+                "City",
+                "Province",
+                "Skill",
                 "Seniority",
                 "Work Type",
                 "Industry Type",
@@ -52,7 +52,7 @@ class DataTransformation:
             cat_pipeline=Pipeline(
                 steps=[
                     ("imputer", SimpleImputer(strategy="most_frequent")),
-                    ("one_hot_encoder", OneHotEncoder()),
+                    ("one_hot_encoder", OneHotEncoder(handle_unknown="ignore")),
                     ("scaler", StandardScaler(with_mean=False))
                 ]
             )
@@ -119,16 +119,6 @@ class DataTransformation:
                     mapped_feature_test_arr[row, col] = value
 
                 input_feature_test_arr = mapped_feature_test_arr
-
-            print(type(input_feature_train_arr))
-            print(type(input_feature_test_arr))
-            print(input_feature_train_arr)
-            print("------------------------------")
-            print("Shapes before concatenation:")
-            print("input_feature_train_arr shape: %s", input_feature_train_arr.shape)
-            print("target_feature_train_df shape: %s", np.array(target_feature_train_df).shape)
-            print("------------------------------")
-            print(target_feature_train_df)
             
             train_arr = np.c_[
                 input_feature_train_arr, np.array(target_feature_train_df)

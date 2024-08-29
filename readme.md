@@ -15,6 +15,13 @@
 - Preprocessing steps can be added within the function as needed
 - In this example, we split the CSV file into test and train data set
 
+### [Data Transformation](https://github.com/shadowdk3/canada_software_job_trend_in_2024/blob/master/src/components/data_transformation.py)
+
+- encapsulates a specific data transformation task such as cleaning data, scaling features, encoding categorical variables, or feature engineering
+- These functions are designed to take input data, perform the desired transformation, and return the transformed data
+- The use of popular libraries like `Pandas` and `scikit-learn` (for StandardScaler) makes it easier to work with and manipulate the data effectively
+- The functions are designed to be modular and reusable, allowing you to call them as needed in your data analysis pipeline
+
 ## [EDA](https://github.com/shadowdk3/canada_software_job_trend_in_2024/blob/master/notebook/EDA_Canada_Software_Job_Trend_2024.ipynb)
 
 The puroise of this project is to master the exploratory data analsis (EDA) in Canada Software Job Trend in 2024
