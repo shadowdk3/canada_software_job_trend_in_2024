@@ -22,6 +22,12 @@
 - The use of popular libraries like `Pandas` and `scikit-learn` (for StandardScaler) makes it easier to work with and manipulate the data effectively
 - The functions are designed to be modular and reusable, allowing you to call them as needed in your data analysis pipeline
 
+### [Model Trainer](https://github.com/shadowdk3/canada_software_job_trend_in_2024/blob/master/src/components/model_trainer.py)
+
+- Training and evaluating regression models for a data analysis project
+- Initializes, trains, evaluates, and selects the best performing regression model from a set of algorithms
+- This file is crucial for automating the model training process and ensuring the selection of the best model for predictive analytics tasks
+
 ## [EDA](https://github.com/shadowdk3/canada_software_job_trend_in_2024/blob/master/notebook/EDA_Canada_Software_Job_Trend_2024.ipynb)
 
 The puroise of this project is to master the exploratory data analsis (EDA) in Canada Software Job Trend in 2024
