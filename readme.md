@@ -6,6 +6,10 @@
 
 `pip install -r requirements.txt`
 
+## Summary
+
+[EDA](#eda)
+
 ## Project Structure
 
 ### [Data Ingestion](https://github.com/shadowdk3/canada_software_job_trend_in_2024/blob/master/src/components/data_ingestion.py)
@@ -34,6 +38,11 @@
 - Flask can serve as the backend system that exposes the ML model's functionality over HTTP
 
 ![](/ref/flask.png)
+
+### [Pytest](https://github.com/shadowdk3/canada_software_job_trend_in_2024/blob/master/tests/test_app.py)
+
+- Testing framework for Python that makes it easy to write simple and scalable tests
+- `pytest` is widely used in the Python community due to its simplicity, flexibility, and powerful features, making it a popular choice for writing tests for Python projects of any size
 
 ## [EDA](https://github.com/shadowdk3/canada_software_job_trend_in_2024/blob/master/notebook/EDA_Canada_Software_Job_Trend_2024.ipynb)
 
