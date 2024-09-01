@@ -28,6 +28,13 @@
 - Initializes, trains, evaluates, and selects the best performing regression model from a set of algorithms
 - This file is crucial for automating the model training process and ensuring the selection of the best model for predictive analytics tasks
 
+### [Flask](https://github.com/shadowdk3/canada_software_job_trend_in_2024/blob/master/app.py)
+
+- Flask is a lightweight Python web framework that is commonly used for developing web applications
+- Flask can serve as the backend system that exposes the ML model's functionality over HTTP
+
+![](/ref/flask.png)
+
 ## [EDA](https://github.com/shadowdk3/canada_software_job_trend_in_2024/blob/master/notebook/EDA_Canada_Software_Job_Trend_2024.ipynb)
 
 The puroise of this project is to master the exploratory data analsis (EDA) in Canada Software Job Trend in 2024

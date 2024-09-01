@@ -1,0 +1,279 @@
+<html>
+<body>
+    <div class="login">
+       <h1>Canada Software Job Trend 2024</h1>
+   
+       <form action="{{ url_for('predict_datapoint')}}" method="post">
+        <h1>
+            <legend>Software Job Average Salary Prediction</legend>
+        </h1>
+
+        <div class="mb-3">
+            <select id="jobTitleSelect" name="jobTitleAnalyst"></select>
+        </div>
+        <div class="mb-3">
+            <select id="jobInfoSelect" name="jobInfoAnalyst"></select>
+        </div>
+        <div class="mb-3">
+            <select id="positionSelect" name="positionAnalyst"></select>
+        </div>
+        <div class="mb-3">
+            <select id="employerSelect" name="employerAnalyst"></select>
+        </div>
+
+        <div class="mb-3">
+            <select id="citySelect" name="cityAnalyst"></select>
+        </div>
+
+        <div class="mb-3">
+            <select id="provinceSelect" name="provinceAnalyst"></select>
+        </div>
+
+        <div class="mb-3">
+            <select id="skillSelect" name="skillAnalyst"></select>
+        </div>
+
+        <div class="mb-3">
+            <select id="senioritySelect" name="seniorityAnalyst"></select>
+        </div>
+
+        <div class="mb-3">
+            <select id="workTypeSelect" name="workTypeAnalyst"></select>
+        </div>
+
+        <div class="mb-3">
+            <select id="industrySelect" name="industryAnalyst"></select>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Minimun Salary</label>
+            <input class="form-control" type="number" name="min_salary"
+                placeholder="Enter your minimun salary" min='30241' max='137280' />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Maximun Salary</label>
+            <input class="form-control" type="number" name="max_salary"
+                placeholder="Enter your maximun salary" min='57200' max='180000' />
+        </div>
+
+        <br>
+        
+        <div class="mb-3">
+            <input class="btn btn-primary" type="submit" value="Predict your" required />
+        </div>
+    </form>
+    <h2>
+       THE  prediction is {{results}}
+    </h2>
+
+    <script>
+        const jobTitleOptions = [
+            'Systems and Data Analysts', 
+            'Business and Marketing Analysts',
+            'Business and Technical Analysts',
+            'Senior Supply Chain Data Analysts',
+            'Senior Business Intelligence Analysts',
+            'Senior Business Analysts',
+            'Business Systems Analysts',
+            'Financial and Operational Analysts',
+            'Senior Data Analysts',
+            'Database Analysts'
+        ];
+
+        const jobTitleElement = document.getElementById('jobTitleSelect');
+
+        jobTitleOptions.forEach(option => {
+            const optionElement = document.createElement('option');
+            optionElement.textContent = option;
+            optionElement.value = option;
+            jobTitleElement.appendChild(optionElement);
+        });
+
+        const jobInfoOptions = [
+            'Media Analyst',
+            'Python Data Analyst',
+            'Analyste spcialis en informatique Specialized Data Analyst 1000846',
+            'Power BI Developer',
+            'Business Intelligence Developer local to Quebec',
+            'Senior Technical Analyst',
+            'Enterprise Data Analyst',
+            'Portfolio Management Analyst Quantitative Equity',
+            'Fuel Pricing Analyst',
+            'regional development analyst'
+        ];
+
+        const jobInfoElement = document.getElementById('jobInfoSelect');
+
+        jobInfoOptions.forEach(option => {
+            const optionElement = document.createElement('option');
+            optionElement.textContent = option;
+            optionElement.value = option;
+            jobInfoElement.appendChild(optionElement);
+        });
+
+        const positionOptions = [
+            'Risk Analyst',
+            'Business Analyst',
+            'Data Analyst',
+            'Data Engineer',
+            'Data Specialist',
+            'Analyst',
+            'Programmer',
+            'Developer',
+            'System Analyst',
+            'Lead'
+        ];
+
+        const positionElement = document.getElementById('positionSelect');
+
+        positionOptions.forEach(option => {
+            const optionElement = document.createElement('option');
+            optionElement.textContent = option;
+            optionElement.value = option;
+            positionElement.appendChild(optionElement);
+        });
+
+        const employerOptions = [
+            'Binance',
+            'Canadian Nuclear Laboratories',
+            'Sander Geophysics Limited',
+            'Niagara Health System',
+            'IMP Group',
+            'Ground Effects',
+            'The City of Vancouver',
+            'Ontario Health',
+            'Softline Technology',
+            'DLL'
+        ];
+
+        const employerElement = document.getElementById('employerSelect');
+
+        employerOptions.forEach(option => {
+            const optionElement = document.createElement('option');
+            optionElement.textContent = option;
+            optionElement.value = option;
+            employerElement.appendChild(optionElement);
+        });
+
+        const cityOptions = [
+            'Ottawa',
+            'Toronto',
+            'Calgary',
+            'Fredericton',
+            'Winnipeg',
+            'Oakville',
+            'Waterloo',
+            'Saskatoon',
+            'Victoria',
+            'Richmond'
+        ];
+
+        const cityElement = document.getElementById('citySelect');
+
+        cityOptions.forEach(option => {
+            const optionElement = document.createElement('option');
+            optionElement.textContent = option;
+            optionElement.value = option;
+            cityElement.appendChild(optionElement);
+        });
+
+        const provinceOptions = [
+            'Undef',
+            'ON',
+            'BC',
+            'AB',
+            'SK',
+            'QC',
+            'PE',
+            'NB',
+            'NS',
+            'MB',
+            'NL',
+            'YT',
+            'NT',
+            'NFL'
+        ];
+
+        const provinceElement = document.getElementById('provinceSelect');
+
+        provinceOptions.forEach(option => {
+            const optionElement = document.createElement('option');
+            optionElement.textContent = option;
+            optionElement.value = option;
+            provinceElement.appendChild(optionElement);
+        });
+
+        const skillOptions = [
+            'Python, Sql',
+            'Power Bi, Power BI, Excel',
+            'Power BI, Data modeling, Business intelligence, Tableau, Databases',
+            'SQL, SAP, Computer skills, Marketing, Workday',
+            'Investment, Power BI, SQL, SAP, Office Suite'
+        ];
+
+        const skillElement = document.getElementById('skillSelect');
+
+        skillOptions.forEach(option => {
+            const optionElement = document.createElement('option');
+            optionElement.textContent = option;
+            optionElement.value = option;
+            skillElement.appendChild(optionElement);
+        });
+
+        const seniorityOptions = [
+            'ANY',
+            'Senior',
+            'Mid',
+            'Junior'
+        ];
+
+        const seniorityElement = document.getElementById('senioritySelect');
+
+        seniorityOptions.forEach(option => {
+            const optionElement = document.createElement('option');
+            optionElement.textContent = option;
+            optionElement.value = option;
+            seniorityElement.appendChild(optionElement);
+        });
+
+        const workTypeOptions = [
+            'Remote',
+            'In-Person',
+            'Hybrid'
+        ];
+
+        const workTypeElement = document.getElementById('workTypeSelect');
+
+        workTypeOptions.forEach(option => {
+            const optionElement = document.createElement('option');
+            optionElement.textContent = option;
+            optionElement.value = option;
+            workTypeElement.appendChild(optionElement);
+        });
+
+        const industryOptions = [
+            'Others',
+            'Technology',
+            'Service',
+            'Healthcare',
+            'Insurance',
+            'Finance',
+            'Energy',
+            'Automotive',
+            'Education',
+            'Construction'
+        ];
+
+        const industryElement = document.getElementById('industrySelect');
+
+        industryOptions.forEach(option => {
+            const optionElement = document.createElement('option');
+            optionElement.textContent = option;
+            optionElement.value = option;
+            industryElement.appendChild(optionElement);
+        });
+
+    </script>
+   <body>
+</html>
