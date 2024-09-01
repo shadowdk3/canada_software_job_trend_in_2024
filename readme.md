@@ -8,7 +8,12 @@
 
 ## Summary
 
-[EDA](#eda)
+- [Data Ingestion](#data-ingestion)
+- [Data Transformation](#data-transformation)
+- [Model Trainer](#model-trainer)
+- [Flask](#flask)
+- [Pytest](#pytest)
+- [EDA](#eda)
 
 ## Project Structure
 
@@ -39,6 +44,8 @@
 
 ![](/ref/flask.png)
 
+## Test
+
 ### [Pytest](https://github.com/shadowdk3/canada_software_job_trend_in_2024/blob/master/tests/test_app.py)
 
 - Testing framework for Python that makes it easy to write simple and scalable tests
@@ -56,6 +63,8 @@ The puroise of this project is to master the exploratory data analsis (EDA) in C
 - matplotlib
 
 ### Data
+
+https://www.kaggle.com/datasets/amanbhattarai695/data-analyst-job-roles-in-canada/data
 
 - Job Title: A generalized job title that encapsulates the role.
 - Job Info: The exact job title as listed on the job sites.
